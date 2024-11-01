@@ -1,0 +1,9 @@
+# Các file của Visual Studio
+.vs/
+*.vcxproj.user
+*.sln
+
+# Thư mục build
+Debug/
+Release/
+x64/
