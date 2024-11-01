@@ -21,7 +21,7 @@
     <ClCompile Include="thuat_toan_hamilton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="playground.cpp">
+    <ClCompile Include="read_file.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="thuat_toan_hamilton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="playground.h">
+    <ClInclude Include="read_file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -20,7 +20,7 @@ void inLoTrinh(int pathLength) {
 }
 
 // thuat toan tim chu trinh hamilton
-int chuTrinhHamilton(int maTranKe[26][26], int pos, int start, int MAX) {
+int chuTrinhHamilton(int maTranKe[100][100], int pos, int start, int MAX) {
     
     if (pos == MAX) {
         if (maTranKe[path[pos - 1]][start] != 0) { 
@@ -50,7 +50,7 @@ int chuTrinhHamilton(int maTranKe[26][26], int pos, int start, int MAX) {
 }
 
 // chay thuat toan tim ra chu trinh hamilton va in ra ket qua
-int chayHamilton(int maTranKe[26][26], int MAX, int dinhXuatPhat) {
+int chayHamilton(int maTranKe[100][100], int MAX, int dinhXuatPhat) {
     // Dinh D la diem xuat phat (voi dinhXuatPhat = 3)
     int start = dinhXuatPhat;
 
@@ -65,11 +65,11 @@ int chayHamilton(int maTranKe[26][26], int MAX, int dinhXuatPhat) {
 
     // In ra ket qua
     if (result == 2) {
-        printf("Cau 5 \nKet qua: 2 (ton tai chu trinh hamilton quay lai dinh D)\n");
+        printf("Cau 5 \nKet qua: 2 (ton tai chu trinh hamilton quay lai dinh xuat phat)\n");
         inLoTrinh(MAX + 1);
     }
     else if (result == 1) {
-        printf("Cau 5 \nKet qua: 1 (ton tai duong di hamilton khong quay lai dinh D)\n");
+        printf("Cau 5 \nKet qua: 1 (ton tai duong di hamilton khong quay lai dinh xuat phat)\n");
         inLoTrinh(MAX);
     }
     else {

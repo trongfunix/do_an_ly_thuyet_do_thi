@@ -1,2 +1,2 @@
 #pragma once
-int chayHamilton(int maTranKe[26][26], int MAX, int dinhXuatPhat);
+int chayHamilton(int maTranKe[100][100], int MAX, int dinhXuatPhat);
