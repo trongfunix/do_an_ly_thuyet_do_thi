@@ -2,11 +2,12 @@
 #include <stdio.h>
 #include "thuat_toan_hamilton.h"
 #include "read_file.h"
+#include <ctype.h>
 
 int main() {
 
     // file .txt can xet
-    char filename[] = "playground_example01.txt";
+    char filename[] = "playground_example.txt";
     int n;
     int maTranKe[100][100];
 
@@ -24,9 +25,17 @@ int main() {
 
     //Khoi tao va cho nguoi dung nhap dinh xuat phat. Vd: A = 0, B = 1 ... 
 
+    char kyTuDinhXuatPhat;
     int dinhXuatPhat;
+
     printf("Nhap vao dinh xuat phat: ");
-    scanf("%d", &dinhXuatPhat);
+    scanf("%c", &kyTuDinhXuatPhat);
+
+    // chuyen chu thuong thanh chu hoa 
+    kyTuDinhXuatPhat = toupper(kyTuDinhXuatPhat);
+
+    dinhXuatPhat = kyTuDinhXuatPhat - 'A';
+    // Chay giai thuat hamilton
     chayHamilton(maTranKe, n, dinhXuatPhat);
 
     return 0;
