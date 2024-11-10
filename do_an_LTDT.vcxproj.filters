@@ -24,6 +24,9 @@
     <ClCompile Include="read_file.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="test_thuat_toan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="thuat_toan_hamilton.h">

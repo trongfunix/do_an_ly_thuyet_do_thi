@@ -6,7 +6,7 @@ int path[100];
 
 // Ham in ra lo trinh
 void inLoTrinh(int pathLength) {
-    printf("Cau 6\n");
+    printf("Cau 6:\n");
 
     for (int i = 0; i < pathLength; i++) {
         // Chuyen so thanh ky tu A, B, C, D ...
@@ -65,15 +65,15 @@ int chayHamilton(int maTranKe[100][100], int MAX, int dinhXuatPhat) {
 
     // In ra ket qua
     if (result == 2) {
-        printf("Cau 5 \nKet qua: 2 (ton tai chu trinh hamilton quay lai dinh xuat phat)\n");
+        printf("Cau 5: \nKet qua: 2 (Ton tai chu trinh Hamilton quay lai dinh xuat phat)\n");
         inLoTrinh(MAX + 1);
     }
     else if (result == 1) {
-        printf("Cau 5 \nKet qua: 1 (ton tai duong di hamilton khong quay lai dinh xuat phat)\n");
+        printf("Cau 5: \nKet qua: 1 (Ton tai duong di Hamilton khong quay lai dinh xuat phat)\n");
         inLoTrinh(MAX);
     }
     else {
-        printf("Cau 5 \nKet qua: 0 (khong ton tai lo trinh hamilton nao)\n");
+        printf("Cau 5: \nKet qua: 0 (Khong ton tai lo trinh Hamilton nao)\n");
     }
 
     return 0;

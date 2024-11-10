@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="read_file.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="test_thuat_toan.cpp" />
     <ClCompile Include="thuat_toan_hamilton.cpp" />
   </ItemGroup>
   <ItemGroup>

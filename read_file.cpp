@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int testMaTran[100][100] = {
+    {0, 1, 1, 1},
+    {1, 0, 1, 2},
+    {1, 1, 0, 2},
+    {1, 2, 2, 0}
+};
+
 // Ham doc file va chuyen thanh ma tran ke 
 void docFileVaChuyenMaTranKe(const char* filename, int maTranKe[100][100], int* n) {
     
